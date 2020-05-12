@@ -55,6 +55,7 @@ Future<List<News>> fatchNews(http.Client client, id) async {
   url = Constant.base_url +"everything?q=COVID-19&from=2020-05-12&sortBy=popularity&apiKey="; //Insert your apiKey here
   final response = await client.get(url);
   return compute(parsenews, response.body);
+
 }
 
 List<News> parsenews(String responsebody) {
@@ -97,11 +98,11 @@ class NewsList extends StatelessWidget {
             leading: CircleAvatar(
               child: Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Colors.black,
               ),
-              backgroundColor: Colors.black,
+              backgroundColor: Colors.white,
             ),
-            title: Text(news[index].title),
+            title: Text(news[index].title, style: TextStyle(color: Colors.white),),
             onTap: () {
               var url = news[index].url;
               Navigator.push(
@@ -111,6 +112,7 @@ class NewsList extends StatelessWidget {
                   ));
             },
           ),
+          color: Colors.black,
         );
       },
     );
