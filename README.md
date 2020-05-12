@@ -1,6 +1,6 @@
-# news
+# COVID News
 
-A new Flutter project.
+Get latest news regarding the COVID-19 Virus
 
 ## Getting Started
 
