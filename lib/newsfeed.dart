@@ -52,7 +52,7 @@ class NewsFeedPage extends StatelessWidget {
 
 Future<List<News>> fatchNews(http.Client client, id) async {
   String url;
-  url = Constant.base_url +"everything?q=COVID-19&from=2020-05-12&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+  url = Constant.base_url +"everything?q=COVID-19&from=2020-05-12&sortBy=popularity&apiKey="; //Insert your apiKey here
   final response = await client.get(url);
   return compute(parsenews, response.body);
 }
