@@ -70,6 +70,9 @@ class NewsFeedPage extends StatelessWidget {
             
             ),
             ListTile(
+              leading: Icon(Icons.business ,
+             color: Colors.black,
+             ),
               title: Text('Business'),
               onTap: (){
                 var id = 1;
@@ -85,6 +88,9 @@ class NewsFeedPage extends StatelessWidget {
               }
             ),
              ListTile(
+             leading: Icon(Icons.show_chart ,
+             color: Colors.black,
+             ),
               title: Text('Stocks'),
               onTap: (){
                var id = 2;
@@ -98,6 +104,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+               leading: Icon(Icons.computer ,
+             color: Colors.black,
+             ),
               title: Text('Technology'),
               onTap: (){
                var id = 3;
@@ -111,6 +120,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+            leading: Icon(Icons.local_hospital,
+             color: Colors.black,
+             ),
               title: Text('Health'),
               onTap: (){
                var id = 4;
@@ -124,6 +136,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+              leading: Icon(Icons.pool ,
+             color: Colors.black,
+             ),
               title: Text('Sports'),
               onTap: (){
                var id = 5;
@@ -137,6 +152,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+              leading: Icon(Icons.flight ,
+             color: Colors.black,
+             ),
               title: Text('Travel'),
               onTap: (){
                var id = 6;
@@ -150,6 +168,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+            leading: Icon(Icons.public ,
+             color: Colors.black,
+             ),
               title: Text('World News'),
               onTap: (){
                var id = 7;
@@ -163,6 +184,9 @@ class NewsFeedPage extends StatelessWidget {
               }
              ),
              ListTile(
+            leading: Icon(Icons.language ,
+             color: Colors.black,
+             ),
               title: Text('China'),
               onTap: (){
                var id = 8;
