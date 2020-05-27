@@ -211,31 +211,31 @@ Future<List<News>> fatchNews(http.Client client, id) async {
   String url;
   if (id == 1) {
     url = Constant.base_url +
-        "top-headlines?country=us&category=business&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "top-headlines?country=us&category=business&apiKey=";
   } 
    else if (id == 2) {
     url = Constant.base_url +
-        "everything?q=stocks&sortBy=publishedAt&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=stocks&sortBy=publishedAt&apiKey=";
   } else if (id == 3) {
     url = Constant.base_url +
-        "everything?q=technology&from=2020-05-13&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=technology&from=2020-05-13&to=2020-05-27&sortBy=popularity&apiKey=";
   } else if (id == 4) {
     url = Constant.base_url +
-        "everything?q=health&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=health&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=";
   } else if (id == 5) {
     url = Constant.base_url +
-        "everything?q=sports&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=sports&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=";
   } else if (id == 6) {
     url = Constant.base_url +
-        "everything?q=travel&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=travel&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=";
   } else if (id == 7) {
     url = Constant.base_url +
-        "everything?q=world&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=world&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=";
   } else if (id == 8) {
     url = Constant.base_url +
-        "everything?q=china&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e";
+        "everything?q=china&from=2020-05-10&to=2020-05-27&sortBy=popularity&apiKey=";
   } 
-  url = Constant.base_url +"everything?q=COVID-19&from=2020-05-27&sortBy=popularity&apiKey=6379d43c48584ba0917b7d655523eb8e"; //Insert your apiKey here
+  url = Constant.base_url +"everything?q=COVID-19&from=2020-05-27&sortBy=popularity&apiKey="; //Insert your apiKey here
   
   final response = await client.get(url);
   return compute(parsenews, response.body);
