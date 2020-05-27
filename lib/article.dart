@@ -1,4 +1,4 @@
-
+import 'package:share/share.dart';
 class NewsArticle {
 
   final String title; 
