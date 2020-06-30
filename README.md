@@ -12,7 +12,6 @@ If packages in pubspec.yaml are old, do update manually from pub.dev. Get your A
 
 ```
 static String key ="ENTER YOUR API KEY";
-
 ```
 In newsfeed.dart, substitute with the API KEY value or use the String key instead.
 ```
