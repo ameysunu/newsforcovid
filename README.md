@@ -15,17 +15,15 @@ static String key ="ENTER YOUR API KEY";
 
 ```
 In newsfeed.dart, substitute with the API KEY value or use the String key instead.
-
 ```
 url = Constant.base_url + "top-headlines?country=us&category=business&apiKey=YOUR_API_KEY";
-
 ```
 or
 
 ```
 url = Constant.base_url + "top-headlines?country=us&category=business&apiKey=key";
-
 ```
+
 ## Screenshots
 <img src= "images/front.png" width="360" height="720" > <img src= "images/article.png" width="360" height="720" > <img src= "images/drawer.png" width="360" height="720" >
 
